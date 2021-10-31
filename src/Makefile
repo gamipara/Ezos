@@ -16,7 +16,7 @@ mbr.bin: mbr.asm
 os-image.bin: mbr.bin kernel.bin
 	cat $^ > $@
 run: os-image.bin
-	qemu-system-i386 -fda os-image.bin  -L "C:\Program Files\qemu
+	qemu-system-i386 -fda os-image.bin  -L "C:\Program Files\qemu"
 
 
 clean:
